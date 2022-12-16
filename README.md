@@ -14,6 +14,7 @@ Alzheimer’s disease is the most common type of dementia, which involves parts 
 └─oasis_cross-sectional.csv
 ```
 4. Run train.py to train the model `python trainNet.py --dataset_path YOURPATHTODATASET --model pretrained`
+5. You can test the ResNet pretained model by `python test.py --dataset_dir YOURPATHTODATASET --model_path YOURPATHTOMODEL`, or use`python test_age.py --dataset_dir YOURPATHTODATASET --model_path YOURPATHTOMODEL` to test the model with age input.
 
 For trainNet.py, you can adjust the training by adding or changing arguments.
 
