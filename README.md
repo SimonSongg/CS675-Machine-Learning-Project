@@ -7,7 +7,8 @@ Alzheimer’s disease is the most common type of dementia, which involves parts 
 1. Download the OASIS-1 dataset (MRI scans and CSV file) from their website (http://www.oasis-brains.org/)
 2. Use `python dataprep.py --dataset_path YOURPATHTODATASET --slice_ways coronal` to process the raw MRI scan data
 3. Make sure your file hierarchy is correct:
-```├─test
+```
+├─test
 ├─train
 ├─val
 └─oasis_cross-sectional.csv
