@@ -1,0 +1,10 @@
+matplotlib~=3.6.1
+nibabel~=4.0.2
+numpy~=1.23.4
+opencv_python~=4.6.0.66
+pandas~=1.5.2
+Pillow~=9.3.0
+scikit_learn~=1.2.0
+tensorboardX~=2.5.1
+torch~=1.12.1+cu116
+torchvision~=0.13.1+cu116
