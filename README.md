@@ -4,6 +4,23 @@ Alzheimer’s disease is the most common type of dementia, which involves parts 
 
 ## How to use the code
 
-1. Download the OASIS-1 dataset from their website (http://www.oasis-brains.org/)
+1. Download the OASIS-1 dataset (MRI scans and CSV file) from their website (http://www.oasis-brains.org/)
 2. Use `python dataprep.py --dataset_path YOURPATHTODATASET --slice_ways coronal` to process the raw MRI scan data
-3. Run train.py to train the model
+3. Make sure your file hierarchy is correct:
+```├─test
+├─train
+├─val
+└─oasis_cross-sectional.csv
+```
+4. Run train.py to train the model `python trainNet.py --dataset_path YOURPATHTODATASET --model pretrained`
+
+For trainNet.py, you can adjust the training by adding or changing arguments.
+
+* --dataset_dir Directory for storing data_set\\
+* --model model used for training (pretrained or age or attention)
+* --model_path Path for storing model
+* --batch_size Batch size, number of speakers per batch
+* --weighted_loss Whether to use weighted cross entropy loss
+* --lr Initial learning rate
+* --momentum Momentum in SGD
+* --epoches Maximum number of epochs
